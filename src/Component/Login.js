@@ -4,14 +4,9 @@ import React, { useEffect, useState } from "react";
 import { NavLink,useNavigate} from "react-router-dom";
 
 function Login() {
-    localStorage.setItem("login", true);
+   
     const navigate = useNavigate();
-    useEffect(()=>{
-        const login = localStorage.getItem('login');
-        if(login){
-            navigate('/')
-        }
-    })
+   
 
   const [value, setValue] = useState({
     email: "",

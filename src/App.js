@@ -13,7 +13,6 @@ import About from "./Component/About"
 import Login from "./Component/Login";
 import Register from "./Component/Register";
 import Thankyou from "./Component/Thankyou";
-import Protected from "./Component/Protected";
 
 
 function App() {
@@ -23,14 +22,14 @@ function App() {
     <Routes>
       <Route exact path="/About" element={<About/>}/>
       <Route exact path="/" element={<Home/>}/>
-      <Route exact path="/Cart" element={<Protected Component={Cart}/>}/>
+      <Route exact path="/Cart" element={<Cart/>}/>
       <Route exact path="/Contact" element={<Contact/>}/>
-      <Route exact path="/CheckOut" element={<Protected Component={CheckOut}/>}/>
+      <Route exact path="/CheckOut" element={<CheckOut/>}/>
       <Route exact path="/Login" element={<Login/>}/>
       <Route exact path="/Register" element={<Register/>}/>
       <Route exact path="/Product" element={<Product/>}/>
       <Route exact path="/Product/:id" element={<Products/>}/>
-      <Route exact path="/Thankyou" element={<Protected Component={Thankyou}/>}/>
+      <Route exact path="/Thankyou" element={<Thankyou/>}/>
     </Routes>
     <Footer/>
     </>
